@@ -1,0 +1,25 @@
+// 6
+using System.Numerics;
+
+Console.Write("Enter loan amount: ");
+double loan = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter interest: ");
+double interest = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter Years: ");
+int years = Convert.ToInt32(Console.ReadLine());
+
+interest = loan * interest * years;
+
+double totalpayment = loan + interest;
+
+int months = years * 12;
+
+double monthlypayment = totalpayment / months;
+
+Console.WriteLine("Loan Amount: " + loan);
+Console.WriteLine("Interest: " + interest);
+Console.WriteLine("Total Payment: " + totalpayment);
+Console.WriteLine("Monthly Payment: " + monthlypayment);
+
+
+
