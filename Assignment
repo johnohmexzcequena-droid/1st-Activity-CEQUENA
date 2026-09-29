@@ -1,0 +1,30 @@
+Data Structures and Algorithms
+Data Structures are ways to store and organize data. Algorithms are step-by-step instructions used to solve problems or complete tasks. 
+Data structures and algorithms work together to help programs handle data efficiently.
+
+Linear Data Structure
+A Linear Data Structure is a structure where data is arranged one after another in a sequence. Each item has a specific position in the sequence.
+
+A One Dimensional 
+Array is a data structure used to store multiple elements. The elements are arranged in a single sequence, and each element can 
+be accessed using its position or index.
+
+Big O Notation
+Big O Notation is used to describe how the amount of work an algorithm needs changes when the amount of data becomes larger.
+
+Basic Searching Algorithms
+Searching Algorithms are methods used to find a particular item in a group of data.
+Two basic searching algorithms are Linear Search and Binary Search. They work differently depending on how the data is organized.
+
+Linear Search
+Linear Search checks the data one item at a time, starting from the first item. It continues until the required item is found or there are no more items to check.
+
+Binary Search
+Binary Search finds an item by repeatedly dividing the data into two parts. It checks the middle item and then decides whether to search the left or right half.
+
+
+https://www.w3schools.com/dsa/dsa_intro.php
+https://www.geeksforgeeks.org/dsa/introduction-to-linear-data-structures/
+https://www.w3schools.com/dsa/dsa_data_arrays.php
+https://www.geeksforgeeks.org/dsa/analysis-algorithms-big-o-analysis/
+https://www.geeksforgeeks.org/dsa/searching-algorithms/
