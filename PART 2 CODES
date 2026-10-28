@@ -1,0 +1,227 @@
+namespace _1._Treasure_Hunt_Score_Counter
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            int treasure = 1;
+            listBox1.Items.Clear();
+
+            while (treasure <= 10)
+            {
+                listBox1.Items.Add("Treasure " + treasure + " collected!");
+                treasure++;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+
+
+2.
+namespace _2._Guess_the_Secret_Number
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int secret = 7;
+            int guess = Convert.ToInt32(textBox1.Text);
+
+            while (guess != secret)
+            {
+                label2.Text = "Wrong Guess! Try Again.";
+                return;
+            }
+
+            label2.Text = "You Win!";
+        }
+    }
+    }
+
+
+3. 
+namespace _2._Monster_Battle
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int hp = 50;
+            string result = "";
+
+            do
+            {
+                hp -= 10;
+                result += "Monster HP: " + hp + "\n";
+            }
+            while (hp > 0);
+
+            result += "\nMonster Defeated!";
+            label2.Text = result;
+        }
+    }
+}
+
+
+4.
+using System.Reflection.Emit;
+
+namespace Choose_a_weapon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string weapon = comboBox1.Text;
+
+            switch (weapon)
+            {
+                case "Sword":
+                    label2.Text = "⚔️ You attacked with a Sword!";
+                    break;
+
+                case "Bow":
+                    label2.Text = "🏹 You attacked with a Bow!";
+                    break;
+
+                case "Magic":
+                    label2.Text = "✨ You cast a Magic Spell!";
+                    break;
+
+                default:
+                    label2.Text = "Select a weapon first!";
+                    break;
+            }
+        }
+    }
+}
+
+
+5.
+using System.Reflection.Emit;
+
+namespace Choose_a_weapon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(textBox1.Text, out int door))
+            {
+                label4.Text = "Enter a valid door number!";
+                return;
+            }
+
+            switch (door)
+            {
+                case 1:
+                    label4.Text = "💰 You found treasure!";
+                    break;
+
+                case 2:
+                    label4.Text = "👾 A monster appeared!";
+                    break;
+
+                case 3:
+                    label4.Text = "🧪 You found a magic potion!";
+                    break;
+
+                default:
+                    label4.Text = "Choose Door 1, 2, or 3.";
+                    break;
+            }
+        }
+    }
+}
+
+
+6.
+using System.Reflection.Emit;
+
+namespace Choose_a_weapon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;
+            progressBar1.Value = 0;
+
+            for (int health = 0; health <= 100; health += 20)
+            {
+                progressBar1.Value = health;
+                label5.Text = "Health: " + health + "%";
+
+                Application.DoEvents();
+                System.Threading.Thread.Sleep(300);
+            }
+
+            MessageBox.Show("Full Health!");
+        }
+    }
+}
+
+
+7.
+using System.Reflection.Emit;
+
+namespace Choose_a_weapon
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string stars = "";
+
+            for (int i = 1; i <= 10; i++)
+            {
+                stars += "⭐ Star " + i + " collected!\n";
+            }
+
+            MessageBox.Show(stars);
+        }
+    }
+}
